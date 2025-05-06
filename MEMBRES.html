@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEMBRES</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #f1f1f1;
+            position: relative;
+        }
+
+        /* Logo como capa de fondo transparente */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Img/Logo.jpg') center center no-repeat;
+            background-size: 700px;
+            opacity: 0.20;
+            /* Ajusta la transparencia aquí */
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Asegurar que el contenido esté encima del fondo */
+        body>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .w3-navbar a:hover {
+            background-color: #e0e0e0 !important;
+        }
+
+        .team-card {
+            transition: transform 0.3s;
+        }
+
+        .team-card:hover {
+            transform: scale(1.03);
+        }
+
+        .stars {
+            color: #ffd700;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            body::before {
+                display: none;
+            }
+        }
+
+        .scroll-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #888888;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .scroll-top-btn.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- Barra de navegación -->
+    <div class="w3-bar w3-white w3-card w3-large">
+        <div class="w3-bar-item w3-padding-16">
+            <a href="index.html" class="w3-bar-item w3-button logo">
+                <img src="Img/Logo.jpg" alt="Logo de la web" style="height:30px;">
+                <a href="#" class="w3-bar-item w3-button logo">TARRACOGOL</a>
+            </a>
+        </div>
+
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-16">INICI</a>
+            <a href="MEMBRES.html" class="w3-bar-item w3-button w3-padding-16 w3-light-grey">MEMBRES</a>
+            <a href="PROJECTE.html" class="w3-bar-item w3-button w3-padding-16">PROJECTE</a>
+            <a href="MAPA.html" class="w3-bar-item w3-button w3-padding-16">MAPA</a>
+            <a href="CONTACTE.html" class="w3-bar-item w3-button w3-padding-16">CONTACTE</a>
+        </div>
+
+        <!-- Menú móvil -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-padding-16"
+            onclick="toggleMenu()">☰</a>
+    </div>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobileMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button">INICI</a>
+        <a href="MEMBRES.html" class="w3-bar-item w3-button w3-light-grey">MEMBRES</a>
+        <a href="PROJECTE.html" class="w3-bar-item w3-button">PROJECTE</a>
+        <a href="MAPA.html" class="w3-bar-item w3-button">MAPA</a>
+        <a href="CONTACTE.html" class="w3-bar-item w3-button">CONTACTE</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="w3-container w3-content w3-padding-32" style="max-width:1200px">
+        <h2 class="w3-center w3-wide">MEMBRES</h2>
+        <p class="w3-center w3-large">Qui som i què fem?</p>
+
+        <div class="w3-row-padding w3-center w3-margin-top">
+            <!-- Tarjeta 1 -->
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card w3-white w3-padding-16 team-card">
+                    <img src="Img/enric2.jpg" alt="Enric Canals"
+                        style="width:100%; max-height:300px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3><b>Enric Canals</b></h3>
+                        <p class="w3-opacity">Fundador & CEO</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card w3-white w3-padding-16 team-card">
+                    <img src="Img/messi.jpg" alt="Lionel Messi" style="width:100%; max-height:300px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3><b>Lionel Messi</b></h3>
+                        <p class="w3-opacity">Assessor Financer</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card w3-white w3-padding-16 team-card">
+                    <img src="Img/neymar.jpg" alt="Neymar Jr" style="width:100%; max-height:300px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3><b>Neymar Jr</b></h3>
+                        <p class="w3-opacity">Director de Publicitat</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card w3-white w3-padding-16 team-card">
+                    <img src="Img/maradona.jpg" alt="Maradona" style="width:100%; max-height:300px; object-fit:cover;">
+                    <div class="w3-container">
+                        <h3><b>Maradona</b></h3>
+                        <p class="w3-opacity">Programador Informàtic (Baixa mèdica)</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    
+        // Mostrar/ocultar botó "tornar a dalt"
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            scrollTopBtn.style.display = 'block';
+          } else {
+            scrollTopBtn.style.display = 'none';
+          }
+        });
+    
+        scrollTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
+</body>
+
+<footer class="w3-container w3-dark-grey w3-center w3-padding-32">
+    <p>© 2025 TARRACOGOL. Tots els drets reservats.</p>
+</footer>
+
+</html>

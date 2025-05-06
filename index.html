@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* Estilos personalizados */
+        .scroll-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #888888;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+        .scroll-top-btn.visible {
+            display: block;
+        }
+        .w3-bar-item.logo {
+            font-weight: bold;
+        }
+        
+        /* Estilos para el fondo con imagen */
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Img/camp.jpg);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-text {
+            padding: 20px;
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            padding-top: 60px;
+        }
+        
+        /* Nuevos estilos para la sección dividida */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+            }
+            .about-text, .about-image {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tu navegación y hero section se mantienen igual -->
+    <div class="w3-bar w3-white w3-card w3-large">
+        <a href="index.html" class="w3-bar-item w3-button logo">
+          <img src="Img/Logo.jpg" alt="Logo de la web" style="height:30px;">
+          <a href="#" class="w3-bar-item w3-button logo">TARRACOGOL</a>
+        </a>
+        
+        <!-- Menú para pantallas grandes -->
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button w3-grey">INICI</a>
+            <a href="MEMBRES.html" class="w3-bar-item w3-button">MEMBRES</a>
+            <a href="PROJECTE.html" class="w3-bar-item w3-button">PROJECTE</a>
+            <a href="MAPA.html" class="w3-bar-item w3-button">MAPA</a>
+            <a href="CONTACTE.html" class="w3-bar-item w3-button">CONTACTE</a>
+        </div>
+        
+        <!-- Botón de menú para móviles -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+    </div>
+
+    <!-- Menú para móviles (oculto por defecto) -->
+    <div id="mobileMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium" style="margin-top:46px">
+        <a href="index.html" class="w3-bar-item w3-button w3-grey">INICI</a>
+        <a href="MEMBRES.html" class="w3-bar-item w3-button">MEMBRES</a>
+        <a href="PROJECTE.html" class="w3-bar-item w3-button">PROJECTE</a>
+        <a href="MAPA.html" class="w3-bar-item w3-button">MAPA</a>
+        <a href="CONTACTE.html" class="w3-bar-item w3-button">CONTACTE</a>
+    </div>
+
+    <!-- Sección hero con imagen de fondo -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="w3-xxlarge w3-text-white" style="text-shadow: 2px 2px 4px #000000;">Benvingut/da al projecte TARRACOGOL.</h1>
+            <img src="img/Logo.jpg" alt="Imatge del projecte TARRACOGOL" style="display:block; margin:20px auto; max-width:350px;">
+            <a href="#content" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Saber més</a>
+        </div>
+    </div>
+
+    <!-- Contenido adicional modificado -->
+    <div id="content" class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+        <h2 class="w3-center">Sobre el projecte</h2>
+        
+        <div class="about-section">
+            <div class="about-text">
+                <h3>El nostre objectiu</h3>
+                <p>El projecte TARRACOGOL neix amb la finalitat de promoure i estudiar el medi ambient a la regió de Tarragona. El nostre equip multidisciplinari treballa per entendre millor els ecosistemes locals i desenvolupar solucions sostenibles.</p>
+                
+                <h3>Què fem?</h3>
+                <p>Realitzem investigacions de camp, col·laborem amb institucions acadèmiques i organitzem activitats de conscienciació ambiental. El nostre enfocament combina mètodes científics amb la participació comunitària.</p>
+                
+                <h3>Per què és important?</h3>
+                <p>La preservació dels nostres entorns naturals és crucial per a les generacions futures. A través d'aquest projecte, busquem crear un impacte positiu en la nostra comunitat i en el medi ambient.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="Img/Logo.jpg" alt="Imatge del projecte TARRACOGOL">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de "volver arriba" -->
+    <button id="scrollTopBtn" class="scroll-top-btn w3-hover-dark-grey">↑</button>
+
+    <!-- JavaScript -->
+    <script>
+        // Función para mostrar/ocultar el menú móvil
+        function toggleMenu() {
+            var x = document.getElementById("mobileMenu");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // Mostrar/ocultar botón de "volver arriba"
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 150) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Volver al inicio al hacer clic en el botón
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+<footer class="w3-container w3-dark-grey w3-center w3-padding-32">
+    <p>© 2025 TARRACOGOL. Tots els drets reservats.</p>
+</footer>
+
+</html>
