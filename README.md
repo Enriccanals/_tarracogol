@@ -15,7 +15,7 @@ Els camps de futbol són espais clau per a la cohesió social, la salut i l’ed
 
 ## La història darrera del nostre emblema.
 
-![Camp de futbol](![LOGO](https://github.com/user-attachments/assets/a27f5d0f-40b3-43bd-8b17-43ba8b13faa2)
+![LOGO](![LOGO](https://github.com/user-attachments/assets/a27f5d0f-40b3-43bd-8b17-43ba8b13faa2)
 )
 
 La llegenda de TarracoGol: un pont entre Roma i el futbol.
