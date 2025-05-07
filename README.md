@@ -21,9 +21,13 @@ Diu la llegenda que, a l'antiga ciutat de Tàrraco, capital romana de Hispània,
 Segles més tard, renaixent d’aquest esperit, neix TarracoGol: una plataforma que uneix el patrimoni històric amb la passió moderna pel futbol. El logo simbolitza exactament això:
 
 L’arc de triomf daurat: símbol de persistència, memòria i identitat.
+
 La pilota blanca i negra: el futbol com a llenguatge universal.
+
 Les lletres "TarracoGol": amb les barres grogues i vermelles de la senyera catalana.
+
 L’escut inferior: un segell de comunitat, arrelament i passió.
+
 TarracoGol no és només una web, és un homenatge a la història, al joc i al territori.
 
 
