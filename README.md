@@ -30,8 +30,11 @@ TarracoGol no és només una web, és un homenatge a la història, al joc i al t
 # 2.Dades/continguts.
  
 Les dades utilitzades en el projecte provenen de diverses fonts:
+
 Dades esportives: Estadístiques de partits, gols i equips extrets de la Federació Catalana de Futbol, diaris locals o arxius històrics.
+
 Informació geogràfica: Ubicacions exactes dels camps de futbol obtingudes mitjançant OpenStreetMap o API de Google Maps.
+
 Imatges i textos: Fotografies antigues de l’Arxiu Municipal de Tarragona, articles periodístics i mapes històrics digitalitzats.
 
 # 3.Estructura de la Web
