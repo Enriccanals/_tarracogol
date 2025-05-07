@@ -15,8 +15,7 @@ Els camps de futbol són espais clau per a la cohesió social, la salut i l’ed
 
 ## La història darrera del nostre emblema.
 
-![LOGO](![LOGO](https://github.com/user-attachments/assets/a27f5d0f-40b3-43bd-8b17-43ba8b13faa2)
-)
+https://github.com/Enriccanals/projecte_tarracogol/blob/main/LOGO.png?raw=true
 
 La llegenda de TarracoGol: un pont entre Roma i el futbol.
 Diu la llegenda que, a l'antiga ciutat de Tàrraco, capital romana de Hispània, els ciutadans no només admiraven les curses de quadrigues i els combats de gladiadors, sinó que també jugaven una forma primitiva de futbol als camps propers a l’amfiteatre.
