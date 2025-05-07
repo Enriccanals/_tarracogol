@@ -67,7 +67,7 @@ Elements utilitzats:
 
 -Cards per a presentació de membres
 
--Mapa interactiu amb Leaflet
+-Mapa interactiu amb OpenLayers
 
 # 4.Web Responsive
 
